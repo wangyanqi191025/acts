@@ -329,6 +329,10 @@ class DoubletSeedFinder {
     /// Parameter which can loosen the tolerance of the track seed to form a
     /// helix. This is useful for e.g. misaligned seeding.
     float helixCutTolerance = 1;
+    
+    /// time-related configurations
+    bool applyTimeCut = false;
+    float timeCutCoff = 5.f;
 
     /// Type alias for delegate to apply experiment specific cuts during doublet
     /// finding
